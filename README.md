@@ -132,24 +132,3 @@ Truy cập sai quyền sẽ bị chuyển về trang phù hợp với vai trò. 
 - src/main/resources/META-INF/commons: header, footer, menu dùng chung
 
 Ảnh upload được lưu ở C:\upload (đổi tại util/Constant.java).
-
----
-
-## 8. Lỗi thường gặp
-
-Báo "Identify and stop the process that's listening on port 8090":
-- Cổng đang bị chiếm do bản chạy trước chưa tắt.
-- Bấm nút dừng ở tab Console hoặc Boot Dashboard, hoặc đổi server.port sang số khác.
-
-Không kết nối được database:
-- Kiểm tra SQL Server đã bật, đã bật TCP/IP cổng 1433.
-- Kiểm tra database test đã tồn tại, tài khoản và mật khẩu trong application.properties đúng.
-
-Lỗi phiên bản Java:
-- Chọn JDK 21 trở lên cho project hoặc cho lệnh chạy.
-
-Trang JSP mất giao diện sau khi sửa file:
-- Chạy Project, Clean rồi chạy lại ứng dụng.
-
-Không xóa được Category:
-- Category đó đang có sản phẩm. Xóa hoặc chuyển sản phẩm trước.
